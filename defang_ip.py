@@ -1,8 +1,5 @@
 class Solution(object):
     def defangIPaddr(self, address):
-        """
-        :type address: str
-        :rtype: str
-        """
+        return address.replace(".", "[.]")
 
-pr
+print(Solution().defangIPaddr("255.100.50.0"))
